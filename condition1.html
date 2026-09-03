@@ -11,18 +11,26 @@
        var  Vara = 300;
        var a = window.prompt ("input a number1");
        var b = window.prompt ("input a number2");
-       var c = (a+b);
-       var  d = (a+b+c);
-        if (d>=200){
+      var  d = (a+b);
+        if (d>=180){
             document.getElementById("costing").innerHTML=" comfortable"; 
-        } 
+            if (d>=200){
+            document.getElementById("costing").innerHTML=" ancomfortable"; 
+            } 
 
+             else {
+            document.getElementById("costing").innerHTML=" Dishpoint"; 
+        }
+
+
+            } 
         else {
             document.getElementById("costing").innerHTML=" vary_Dishpoint"; 
-        } 
-        for (let d = 0; d < 3; d++) {
-    document.getElementById("costing").innerHTML=" ancomfortable"; 
-}
+        }
+//         } 
+//         for (let d = 0; d < 3; d++) {
+//     document.getElementById("costing").innerHTML=" ancomfortable"; 
+// }
 
     </script> 
 </body>
