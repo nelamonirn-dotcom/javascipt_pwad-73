@@ -5,15 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function oddoreven(){
-            let number = prompt ("please enter  a number:");
-            number = parseInt (number);
-            if (number%2 === 0){
-                alert(" your provided number " + number + " is Even.");
+        // function oddoreven(){
+        //     let number = prompt ("please enter  a number:");
+        //     number = parseInt (number);
+        //     if (number%2 === 0){
+        //         alert(" your provided number " + number + " is Even.");
 
+        //     }
+        //     else {
+        //         alert(" your provided number " + number + " is odd.");
+        //     }
+        // }
+        function oddoreven(){
+            let number = prompt("Enter the value")
+            number = parseInt(number);
+            if(number%2===0){
+                document.write("Enter the number:" + number + "+ Even");
             }
-            else {
-                alert(" your provided number " + number + " is odd.");
+            else{
+                 document.write("Enter the number:" + number + "+ odd");
             }
         }
       
