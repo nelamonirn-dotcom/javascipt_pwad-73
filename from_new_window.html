@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .blue {
+background-color: rgb(177, 247, 175);
+    }
+    .mywindow {
+        background-color: rgb(111, 207, 15);
+    }
+    </style>
+</head>
+<body>
+    <div id="show"></div>
+    <form action="" name="myform">
+        <label for="">Name</label><br>
+        <input type="text" name="name" placeholder="Enter the name"> <br>
+        <label for="">Id</label><br>
+        <input type="text" name="id" placeholder="Enter the id"><br>
+        <!-- <label for="">gender</label><br>
+        <input type="radio" name="gender" value="male">male
+        <input type="radio" name="gender" value="Female">female
+        <input type="radio" name="gender" value="othet">other <br> -->
+        <label for="">Email</label><br>
+        <input type="email" name="email" placeholder="Enter the email"><br>
+        <label for="">Password</label><br>
+        <input type="password" name="password" placeholder="Enter the password"><br>
+        <input type="button" onclick="mywindow()" name="submit" value="SUBMIT">
+        <input type="button" onclick="mywindow.closed()" name="closed" value="closed">
+    </form>
+    <script>
+        function mywindow(){
+            let name = document.myform.name.value;
+            let id = document.myform.id.value;
+            // let gender = document.myform.gander.value;
+            let email = document.myform.email.value;
+            let password = document.myform.password.value;
+            let output = "<div class='blue'>";
+            output += name + "<br>";
+            output += id + "<br>";
+            // output += gender + "<br>";
+            output += email + "<br>";
+            output += password + "<br>";
+            output += "</div>";
+            // document.getElementById("show").innerHTML= output;
+            mywindow = window.open("","","height:300,width:400");
+            mywindow.document.write(output);
+        }
+    </script>
+</body>
+</html>
