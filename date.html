@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="datefrom">
+        <input type="date" name="date" value="date">
+        <button type="button" onclick="showDay()">click Here</button>
+    </form>
+    <script>
+        // const d = new Date ();
+        // const d = new Date ("2026-02-28:03:25:20");
+        // const d = new Date (89089876);
+        // // const d1 = getday();
+        // document.write(d)
+function showDay(){
+    let date = document.datefrom.date.value;
+    let d = new Date (date);
+    let day = d.getDay();
+    const days = ["sunday","monday","tuesday","wednessday","thursday","Friday","saturday"]
+    alert(days[day]);
+}
+
+    </script>
+</body>
+</html>
