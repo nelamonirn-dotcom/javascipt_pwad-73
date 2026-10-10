@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let mynum = prompt("Enter the a number","");
+        mynum= parseInt(mynum);
+        function abc (x){
+if(x===1){
+alert(x+ " is a not parime number");
+return 0;
+}
+else if(x===2){
+alert(x+ " is a  parime number");
+return 0;
+}
+ else{
+    for( let i = 2; i<x ; i++){
+if(x%i==0){
+    alert(x+ " is a not parime number");
+return 0;
+}
+    }
+    alert(x+ " is a  parime number");
+return 0;
+ }
+        }
+abc(mynum);
+    </script>
+</body>
+</html>
