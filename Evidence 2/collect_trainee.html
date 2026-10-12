@@ -38,6 +38,15 @@ let contact = document.myform.contact.value;
 let Remarks = document.myform.Remarks.value;
 let gender = document.myform.gender.value;
 let Location = document.myform.Location.value;
+// const Course = document.getElementsByClassName("Courses");
+// let Courseoutput = "";
+
+// for(let i = 0 ; i < courses.length; i++ ){
+//     if (courses[i].checked){
+// Courseoutput += courses[i].value + ",";
+//     }
+
+// }
   let output ="";
   // alert(Location);
   output += "name:" + name + "<br>";
@@ -45,6 +54,8 @@ let Location = document.myform.Location.value;
  output += "Remarks:" + Remarks + "<br>";
  output += "gender:" + gender + "<br>";
  output += "Location:" + Location + "<br>";
+output += "Courses:" + "NT"+ ","+"DDD" + "<br>";
+
 let mywindow = window.open("","","height:300,width:400");
             mywindow.document.write(output);
 
